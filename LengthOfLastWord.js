@@ -22,7 +22,7 @@
 // Output: 6
 // Explanation: The last word is "joyboy" with length 6.
 
-let lengthOfLastWord = function(s) {
+let lengthOfLastWord = function(s){
     let word = s.trim().split(' ')
     return word[word.length - 1].length
 };
