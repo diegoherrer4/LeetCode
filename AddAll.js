@@ -14,7 +14,7 @@
 // Your Task
 // Given a vector of integers, return the minimum total cost of addition.
 
-function addAll(numbers) {
+const addAll = (numbers) => {
   let totalCost = 0;
 
   while (numbers.length > 1) {
@@ -24,4 +24,4 @@ function addAll(numbers) {
     totalCost += a;
   }
   return totalCost;
-}
+};
