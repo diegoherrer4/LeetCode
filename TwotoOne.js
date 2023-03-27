@@ -10,6 +10,5 @@
 
 const longest = (s1, s2) => {
   let newStr = s1 + s2;
-  let set = [...new Set(newStr)].sort();
-  return set.join("");
+  return [...new Set(newStr)].sort().join("");
 };
