@@ -8,8 +8,8 @@
 // a = "abcdefghijklmnopqrstuvwxy"
 // longest(a, a) -> "abcdefghijklmnopqrstuvwxy"
 
-function longest(s1, s2) {
+const longest = (s1, s2) => {
   let newStr = s1 + s2;
   let set = [...new Set(newStr)].sort();
   return set.join("");
-}
+};
