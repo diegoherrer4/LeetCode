@@ -5,8 +5,8 @@
 // b = "xxxxyyyyabklmopq"
 // longest(a, b) -> "abcdefklmopqwxy"
 
-// a = "abcdefghijklmnopqrstuvwxyz"
-// longest(a, a) -> "abcdefghijklmnopqrstuvwxyz"
+// a = "abcdefghijklmnopqrstuvwxy"
+// longest(a, a) -> "abcdefghijklmnopqrstuvwxy"
 
 function longest(s1, s2) {
   let newStr = s1 + s2;
