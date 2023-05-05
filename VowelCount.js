@@ -7,10 +7,11 @@
 function getCount(str) {
   let count = 0;
   let arr = str.split("");
-  for (let i = 0; i < arr.length; i++) {
-    if (/^[aeiou]$/i.test(arr[i])) {
+  for (i of arr) {
+    if (/^[aeiou]$/i.test(i)) {
       count++;
     }
   }
+
   return count;
 }
