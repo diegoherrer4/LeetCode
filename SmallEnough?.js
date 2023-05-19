@@ -2,7 +2,7 @@
 
 // You can assume all values in the array are numbers.
 
-function smallEnough(a, limit){
+const smallEnough = (a, limit) => {
     let arr = []
      for(i of a){
        if(i <= limit){
