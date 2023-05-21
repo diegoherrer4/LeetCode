@@ -1,4 +1,4 @@
-function isHappy(n) {
+const isHappy= (n) => {
     while (n > 6) { // while the current number is greater than 6
         let next = 0; // initialize the next number as 0
         while (n) { // while the current number is greater than 0
