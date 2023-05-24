@@ -8,9 +8,9 @@
 // [1, 1, 2] ==> 2
 // // [17, 17, 3, 17, 17, 17, 17] ==> 3
 
-const stray = (numbers) => {
-    for(i of numbers){
-    if(numbers.indexOf(i) === numbers.lastIndexOf(i))
+const stray = (num) => {
+    for(i of num){
+    if(num.indexOf(i) === num.lastIndexOf(i))
     return i
     }
   }
