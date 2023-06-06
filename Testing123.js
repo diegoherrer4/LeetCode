@@ -9,6 +9,6 @@
 // [] --> []
 // ["a", "b", "c"] --> ["1: a", "2: b", "3: c"]
 
-var number = function(array){
+var number = function(array) {
     return array.map((e, index) => index + 1 + ": " + e)
   }
