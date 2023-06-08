@@ -9,8 +9,8 @@
 
 
 
-function sumDigits(number) {
-    let arr = number.toString().split('');
+const sumDigits = (number) =>  {
+
     let result = 0;
   
     for (i of arr) {
