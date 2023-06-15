@@ -13,7 +13,7 @@
 
 // I have also created other katas. Take a look if you enjoyed this kata!
 
-const dontGiveMeFive = (start, end) =>{
+const dontGiveMeFive = (start, end) => { 
     let result = []
       for(let i=start; i<=end; i++){
         let num = i.toString()
