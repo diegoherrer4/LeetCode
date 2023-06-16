@@ -15,7 +15,7 @@
 
 const dontGiveMeFive = (start, end) => { 
     let result = []
-      for(let i=start; i<=end; i++){
+      for(let i = start; i <= end; i++){
         let num = i.toString()
          if(!num.includes('5')){
            result.push(i) 
