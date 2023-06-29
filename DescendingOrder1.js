@@ -7,6 +7,6 @@
 
 // Input: 123456789 Output: 987654321
 
-function descendingOrder(n){
+const descendingOrder = (n) => {
     return Number(n.toString().split('').sort((a,b) => b-a).join(''))
   }
