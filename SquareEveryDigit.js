@@ -9,7 +9,7 @@
 // Happy Coding!
 
 
-function squareDigits(num){
+function squareDigits(num) {
     let strArr = num.toString().split('')
     let result = ""
     for(i of strArr){
