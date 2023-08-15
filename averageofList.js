@@ -4,7 +4,7 @@
 
 
 
-const findAverage = (arr) =>{
+const findAverage = (arr) => { 
     const sum = arr.reduce((a, b) => a + b, 0)
     return arr.length > 0 ? sum / arr.length : 0
-  }
+    }
