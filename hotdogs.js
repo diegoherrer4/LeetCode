@@ -6,7 +6,7 @@
 // n >= 10	90
 // You can use if..else or ternary operator to complete it.
 
-function saleHotdogs(n){
+function saleHotdogs(n) {
     return n < 5 ? n * 100 : n >= 5 && n < 10 ? n * 95 : n * 90
   }
   
