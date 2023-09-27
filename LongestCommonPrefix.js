@@ -26,10 +26,7 @@
 // strs[i] consists of only lowercase English letters.
 
 
-**
- * @param {string[]} strs
- * @return {string}
- */
+
 var longestCommonPrefix = function (strs) {
     // Initialize an empty string to store the common prefix
     let output = "";
