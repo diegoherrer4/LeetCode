@@ -27,17 +27,37 @@
 // Since an empty string reads the same forward and backward, it is a palindrome.
 
 
-/**
- * @param {string} s
- * @return {boolean}
- */
 var isPalindrome = function(s) {
-    //remove spaces, convert to lowercase and check if reverse is the same, if it
-    //is return true else return false.
+    // Initialize left and right pointers
+    let left = 0;
+    let right = s.length - 1;
 
-   
-        let str = s.split('').join('').toLowerCase().replace(/[^a-zA-Z0-9]/g, '')
-        let reverseStr = str.split('').reverse().join('')
-        return str === reverseStr ? true : false
-  
+    while (left < right) {
+        // Move the left pointer to the next alphanumeric character
+        while (left < right && !isAlphanumeric(s[left])) {
+            left++;
+        }
+
+        // Move the right pointer to the next alphanumeric character
+        while (left < right && !isAlphanumeric(s[right])) {
+            right--;
+        }
+
+        // Compare the characters at the left and right pointers
+        if (s[left].toLowerCase() !== s[right].toLowerCase()) {
+            return false;
+        }
+
+        // Move the pointers inward
+        left++;
+        right--;
+    }
+
+    // If the loop completes without returning false, it's a palindrome
+    return true;
 };
+
+// Helper function to check if a character is alphanumeric
+function isAlphanumeric(char) {
+    return /[a-zA-Z0-9]/.test(char);
+}
