@@ -5,10 +5,11 @@
 // The input string will only consist of lower case letters and/or spaces.
 
 function getCount(str) {
+  const vowels = new Set(['a', 'e', 'i', 'o', 'u']);
   let count = 0;
-  let arr = str.split("");
-  for (i of arr) {
-    if (/^[aeiou]$/i.test(i)) {
+  
+  for (letter of str) {
+    if (vowels.has(letter)) {
       count++;
     }
   }
