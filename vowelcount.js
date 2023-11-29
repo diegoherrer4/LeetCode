@@ -14,6 +14,4 @@ function getCount(str) {
       }
     }
   
-    return count;
-  }
-  
+    return coun\
