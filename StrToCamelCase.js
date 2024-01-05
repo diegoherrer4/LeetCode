@@ -8,7 +8,7 @@
 // "The_Stealth-Warrior" gets converted to "TheStealthWarrior"
 
 
-function toCamelCase(str){
+const toCamelCase = (str) => {
     let result = str.split(/[ \- _]/);
     
    for (let i = 1; i < result.length; i++) {
