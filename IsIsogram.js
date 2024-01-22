@@ -8,6 +8,6 @@
 // isIsogram "moose" = false
 // isIsogram "aba" = false
 
-function isIsogram(str){
+const isIsogram= (str) => {
 	return new Set(str.toUpperCase()).size == str.length;
 }
