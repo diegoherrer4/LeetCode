@@ -9,5 +9,5 @@ function dnaStrand(dna){
      for(i of dna){  
       compDNA += dnaMap.get(i)
       }
-    return compDNA;
+    return compDNA
   }
