@@ -8,4 +8,4 @@
 
 // Note: String will have at least one element; words will always be separated by a space.
 
-const addLength = (str) => str.split(" ").map((e) => e + " " + e.length);
+const addLength = (str) => str.split(" ").map((e) => e + " " + e.length)
