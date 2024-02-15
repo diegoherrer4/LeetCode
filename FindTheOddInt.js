@@ -22,7 +22,7 @@ function findOdd(arr) {
       }
     
       // If no number with an odd count is found, return null or any default value
-      return null;
+      return null
     }
     
     
