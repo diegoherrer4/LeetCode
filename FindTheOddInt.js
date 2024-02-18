@@ -9,7 +9,7 @@ function findOdd(arr) {
           counts[num]++;
         } else {
           // If it doesn't, initialize its count to 1
-          counts[num] = 1;
+          counts[num] = 1
         }
       });
     
