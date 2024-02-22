@@ -12,7 +12,7 @@ function digitalRoot(n) {
         .reduce((acc, cur) => acc + cur);
   
       // Recursively call digitalRoot and return the result
-      return digitalRoot(sum);
+      return digitalRoot(sum)
     }
   }
   
