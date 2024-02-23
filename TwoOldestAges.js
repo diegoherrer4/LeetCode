@@ -17,6 +17,6 @@ function twoOldestAges(ages){
        agesSorted.pop()
    
    }
-       return newArr.sort((a,b) => a-b)
+       return newArr.sort((a,b) => a-b);
    }
    
