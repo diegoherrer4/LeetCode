@@ -16,7 +16,7 @@ function splitTextIntoChunks(input, maxLength = 140) {
         }
     }
 
-    return result;
+    return result
 }
 
 
