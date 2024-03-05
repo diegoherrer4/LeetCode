@@ -19,7 +19,20 @@
 // Explanation: In this case, no transactions are done and the max profit = 0.
  
 var maxProfit = function(prices) {
-    const minPrice = Math.min(...prices);
-    const maxPrice = Math.max(...prices.slice(prices.indexOf(minPrice)));
-    return maxPrice - minPrice;
-  };
+    if (prices.length <= 1) return 0; // No profit can be made with less than 2 prices
+    
+    let left = 0;
+    let right = 1;
+    let maxProfit = 0;
+
+    while (right < prices.length) {
+        if (prices[left] < prices[right]) {
+            const profit = prices[right] - prices[left];
+            maxProfit = Math.max(maxProfit, profit);
+        } else {
+            left = right;
+        }
+        right++;
+    } 
+    return maxProfit;
+};
