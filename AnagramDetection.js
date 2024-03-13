@@ -1,5 +1,5 @@
 var isAnagram = function(test, original) {
-    //string -> boolean
+    //string -> boolean.
     return test.toLowerCase().split('').sort().join('') == original.toLowerCase().split('').sort().join('')
   };
   
