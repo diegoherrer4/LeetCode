@@ -10,8 +10,8 @@
 
 function XO(str) {
     let arr = str.toLowerCase().split('')
-    if(arr.includes('x') === false || arr.includes('o' === false))
-      return false;
+    if(arr.length === 0)
+      return true
   
     let map = new Map();
     map.set("x", 0)
