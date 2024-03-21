@@ -15,7 +15,6 @@ str.search("world"); // Searches for "world" and returns the index of the first 
 str.slice(7); // Returns a substring starting from index 7
 str.split(", "); // Splits the string into an array using ", " as the separator
 str.startsWith("Hello"); // Checks if the string starts with "Hello"
-str.substr(7, 5); // Returns a substring starting from index 7 with a length of 5
 str.substring(7); // Returns a substring starting from index 7
 str.toLowerCase(); // Converts the string to lowercase
 str.toUpperCase(); // Converts the string to uppercase
