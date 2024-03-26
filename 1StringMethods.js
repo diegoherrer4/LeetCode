@@ -6,7 +6,7 @@ str.endsWith("!"); // Checks if the string ends with "!"
 str.includes("world"); // Checks if the string includes "world"
 str.indexOf("o"); // Returns the index of the first occurrence of "o"
 str.lastIndexOf("o"); // Returns the index of the last occurrence of "o"
-str.match(/o/g); // Matches all occurrences of "o" in the string
+str.match(/o/g); // Matches all occurrences of "o" in the string and returns an array
 [...str.matchAll(/o/g)]; // Matches all occurrences of "o" in the string and returns an iterable
 str.repeat(2); // Repeats the string twice
 str.replace("world", "everyone"); // Replaces "world" with "everyone"
