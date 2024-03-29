@@ -6,7 +6,7 @@
 
  
 
-// Example 1
+// Example 1:
 
 // Input: nums = [2,7,11,15], target = 9
 // Output: [0,1]
@@ -21,18 +21,23 @@
 // Output: [0,1]
 
 
+
 /**
  * @param {number[]} nums
  * @param {number} target
  * @return {number[]}
  */
-const twoSum = (nums, target) => {
-    // Initialize a for loop
-    for(let i = 0; i < nums.length; i++){
-       for(let j = i+1; j < nums.length; j++){
-           if(nums[i] + nums[j] === target)
-           return [i,j]
-       }
+var twoSum = function(nums, target) {
+    let result = []
+    for (let i = 0; i < nums.length; i++) {
+        if (result.length === 2) break;
+        for (let j = i + 1; j < nums.length; j++) {
+            if (nums[i] + nums[j] === target) {
+                result.push(i);
+                if (result.length === 1) result.push(j);
+                break;
+            }
+        }
     }
-    return []
-}
+    return result;
+};
