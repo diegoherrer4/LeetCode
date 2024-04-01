@@ -8,12 +8,9 @@
 
 function findOutlier(integers){
     //array -> number
-    let OddNums = integers.filter((e) => e%2 !== 0)
-    let EvenNums = integers.filter((e) => e%2 === 0)
+    let oddNums = integers.filter((e) => e%2 !== 0)
+    let evenNums = integers.filter((e) => e%2 === 0)
   
-    if(OddNums.length === 1){
-      return OddNums[0]  
-    } else {
-      return EvenNums[0]
-    }
+    
+  return evenNums.length==1? evenNums[0] : oddNums[0];
   }
