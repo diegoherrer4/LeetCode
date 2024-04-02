@@ -16,3 +16,4 @@
 [3, 5, 6, 8].some((n) => n > 6); // Checks if any element is greater than 6: true
 [1, 2, 3, 4].reverse(); // Reverses the array: [4, 3, 2, 1]
 [3, 5, 7, 8].at(-2); // Accesses the element at index -2: 7
+[3, 5, 7, 8].sort((a, b) => a - b); // For ascending sort
