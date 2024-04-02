@@ -16,23 +16,10 @@
 
 // [Personal thanks to Professor Jim Fowler on Coursera for his awesome classes that I really recommend to any math enthusiast and for showing me this mathematical curiosity too with his usual contagious passion :)]
 
-function tribonacci(signature, n) {
-    // If n is 0, return an empty array
-    if (n === 0) {
-        return [];
+function tribonacci(s,n){
+    var arr = [];
+    for(var i=0; i<n; i++) {
+      arr.push((i<3) ? s[i] : arr[i-1]+arr[i-2]+arr[i-3]);
     }
-
-    // If n is less than or equal to the length of the signature array, return the first n elements
-    if (n <= signature.length) {
-        return signature.slice(0, n);
-    }
-
-    // Otherwise, continue generating the tribonacci sequence
-    let result = signature.slice(); // Copy the signature array
-    for (let i = signature.length; i < n; i++) {
-        let nextElement = result[i - 1] + result[i - 2] + result[i - 3];
-        result.push(nextElement);
-    }
-
-    return result;
-}
+    return arr;
+  }
