@@ -29,7 +29,7 @@ for (let prop in obj) {
 // Example:
 
 
-const arr = [1, 2, 3];
+const arr = [1, 2, 3]
 for (let elem of arr){
     console.log(elem);
 }
