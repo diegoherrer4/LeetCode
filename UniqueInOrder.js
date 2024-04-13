@@ -15,5 +15,5 @@ var uniqueInOrder=function(iterable){
           i--;
         }
     }
-    return arr
+    return arr;
   }
